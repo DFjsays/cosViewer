@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">cosViewer</string>
+    <string name="hint_search">输入关键词搜索…</string>
+    <string name="btn_search">搜索</string>
+    <string name="btn_download">下载到本地</string>
+    <string name="btn_open">打开视频</string>
+    <string name="loading">加载中…</string>
+</resources>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#151515"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="下载目录"
+        android:textColor="#FFD166"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="6dp"
+        android:text="视频会保存到这个目录，必须是可写路径。"
+        android:textColor="#999999"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/setDir"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginTop="10dp"
+        android:background="#242424"
+        android:hint="/sdcard/Download/DSH-Go/cosav"
+        android:inputType="textUri"
+        android:maxLines="1"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:singleLine="true"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#666666"
+        android:textSize="13sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/setDefault"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:background="#2A2A2A"
+            android:text="恢复默认"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/setOpen"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:background="#2A2A2A"
+            android:text="打开目录"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/setSave"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:background="#FFD166"
+            android:text="保存"
+            android:textColor="#111111"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="也可以填 /sdcard/Movies、/sdcard/DCIM/Camera 这类相册能扫到的目录。"
+        android:textColor="#777777"
+        android:textSize="11sp" />
+</LinearLayout>

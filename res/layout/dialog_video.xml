@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#151515">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="12dp">
+
+        <ImageView
+            android:id="@+id/dlgCover"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="#1C1C1C"
+            android:contentDescription="cover"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/dlgTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:paddingBottom="4dp"
+            android:textColor="#F2F2F2"
+            android:textSize="14sp" />
+
+        <HorizontalScrollView
+            android:id="@+id/dlgTagsScroll"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:scrollbars="none"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/dlgTags"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp" />
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/dlgMeta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:textColor="#9A9A9A"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/dlgProg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="8dp"
+            android:textColor="#FFD166"
+            android:textSize="12sp" />
+
+        <ProgressBar
+            android:id="@+id/dlgBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="6dp"
+            android:max="100"
+            android:progress="0"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp">
+
+            <Button
+                android:id="@+id/dlgPlay"
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_weight="1"
+                android:background="#FFD166"
+                android:text="播放"
+                android:textColor="#111111"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/dlgDl"
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:background="#2A2A2A"
+                android:text="下载"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/dlgLater"
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:background="#2A2A2A"
+                android:text="稍后"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/dlgFav"
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:background="#2A2A2A"
+                android:text="收藏"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
